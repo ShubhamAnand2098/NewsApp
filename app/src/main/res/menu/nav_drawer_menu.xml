@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+            />
+
+        <item
+            android:id="@+id/sports"
+            android:title="@string/sports"
+            android:icon="@drawable/icon_sports"
+            />
+
+        <item
+            android:id="@+id/politics"
+            android:title="@string/politics"
+            android:icon="@drawable/icon_politics"/>
+
+        <item
+            android:id="@+id/business"
+            android:title="@string/business"
+            android:icon="@drawable/icon_business"
+            />
+
+        <item
+            android:id="@+id/technology"
+            android:title="@string/technology"
+            android:icon="@drawable/icon_technology"
+            />
+
+        <item
+            android:id="@+id/fashion"
+            android:title="@string/fashion"
+            android:icon="@drawable/icon_fashion"
+            />
+    </group>
+
+    <group
+        android:id="@+id/others">
+        <item
+            android:id="@+id/about_us"
+            android:title="@string/about_us"
+            android:icon="@drawable/icon_about_us"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"
+            android:icon="@drawable/icon_logout"
+            />
+    </group>
+
+</menu>

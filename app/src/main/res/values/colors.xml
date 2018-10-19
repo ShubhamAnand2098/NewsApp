@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5f5f5f</color>
+    <color name="colorPrimaryDark">#202F2F</color>
+    <color name="colorAccent">#1919ff</color>
+    <color name="form_body">#ffffff</color>
+    <color name="tab_normal">#A9A9A9</color>
+    <color name="login_button">#4f4fff</color>
+    <color name="tab_background">#444444</color>
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="name_hint">Name</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="email">Email Id</string>
+    <string name="password_hint">Password</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="title_transition_name">Title</string>
+    <string name="register_prompt">"New User? <b><u>Register</u></b>"</string>
+    <string name="gibberish">tdsuagkagkasksgkackasskfkgksakasbckaskashknxksankaskasgkaskgas
+    asdasdkasudakudgkuasgdkuasgkdgaskdgkasgdukdalsjdiqudjsaldjqihw icoicnqobdbqyqyqwjlsajdqiwyqwd nqw
+    iqwidiqysoiadoiuojaj pejoansdoiqwjoioyasojoasjdoqyodaojoauoqwyoqd qodhoq do doqdhqwo dqoy qwod oqwhonf,sdnc
+    ywiuhaskhdhhadlaslwudpoausahcoa hdaodohqpqpjaas cnaihafqihodsa
+    ayeahsidhawoihhdoapajdpaodeu ueueakcncnsmamaleoeo ueuakoioqioiadas
+    yekahidashiodhesa ahdoadas</string>
+
+    <string name="image_view_transition_name">ImageView Transition</string>
+    <string name="no_internet">No Internet Connection!!</string>
+    <string name="read_more">READ MORE>></string>
+    <string name="source">SOURCE: %1$s \nAUTHOR: %2$s</string>
+
+    <string name="search_text">"Search here"</string>
+    <string name="home"><b>HOME</b></string>
+    <string name="sports"><b>SPORTS</b></string>
+    <string name="politics"><b>POLITICS</b></string>
+    <string name="business"><b>BUSINESS</b></string>
+    <string name="technology"><b>TECHNOLOGY</b></string>
+    <string name="fashion"><b>FASHION</b></string>
+    <string name="about_us"><b>ABOUT US</b></string>
+    <string name="logout"><b>LOGOUT</b></string>
+    <string name="about_us_heading">@string/app_name</string>
+    <string name="about_us_details">Version 1.0</string>
+    <string name="connect">\nConnect with us</string>
+    <string name="copyright">Copyright 2018 © NewsApp</string>
+    <string name="newsapi"><b>Powered By:  NEWSAPI</b>\nby Shubham Anand</string>
+
+</resources>
