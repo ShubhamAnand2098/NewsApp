@@ -69,5 +69,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public String getName(String email)
+    {
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT " + COLUMN2 + " FROM " + TABLE_NAME + " WHERE "
+        + COLUMN3 + " = ?", new String[]{email});
+
+        String n = "GUEST";
+        if(cursor.moveToFirst())
+            n = cursor.getString(cursor.getColumnIndex(COLUMN2));
+
+        return n;
+    }
+
 
 }
