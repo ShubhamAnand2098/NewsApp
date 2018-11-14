@@ -1,5 +1,6 @@
 package com.example.a1605594.newsapp;
 
+import android.animation.LayoutTransition;
 import android.annotation.SuppressLint;
 import android.app.ActivityOptions;
 import android.app.AlertDialog;
@@ -14,6 +15,8 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.transition.TransitionManager;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -24,9 +27,11 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethod;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -98,6 +103,7 @@ public class NewsFeedActivity extends AppCompatActivity implements NavigationVie
 
         final MenuItem menuItem  = menu.findItem(R.id.action_search);
         searchView = (SearchView)menuItem.getActionView();
+
 
         searchView.setQueryHint(getResources().getString(R.string.search_text));
 

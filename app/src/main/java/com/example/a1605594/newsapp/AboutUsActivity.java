@@ -1,11 +1,13 @@
 package com.example.a1605594.newsapp;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -26,11 +28,23 @@ public class AboutUsActivity extends AppCompatActivity {
         whatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("smsto:" + "7860302145");
-                Intent i = new Intent(Intent.ACTION_SENDTO, uri);
-                i.setPackage("com.whatsapp");
-                startActivity(i);
+                String formattedNumber = "917860302145";
+                try{
+                    Intent sendIntent =new Intent("android.intent.action.MAIN");
+                    sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
+                    sendIntent.setAction(Intent.ACTION_SEND);
+                    sendIntent.setType("text/plain");
+                    sendIntent.putExtra(Intent.EXTRA_TEXT,"");
+                    sendIntent.putExtra("jid", formattedNumber +"@s.whatsapp.net");
+                    sendIntent.setPackage("com.whatsapp");
+                    startActivity(sendIntent);
+                }
+                catch(Exception e)
+                {
+                    Toast.makeText(AboutUsActivity.this,"Error/n"+ e.toString(),Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
 
         facebook.setOnClickListener(new View.OnClickListener() {
