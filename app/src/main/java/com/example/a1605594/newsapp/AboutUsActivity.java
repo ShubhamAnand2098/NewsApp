@@ -13,17 +13,15 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AboutUsActivity extends AppCompatActivity {
 
-    private ImageView gmail;
-    private CircleImageView facebook, whatsApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
-        gmail = findViewById(R.id.email_image);
-        facebook = findViewById(R.id.fb_image);
-        whatsApp = findViewById(R.id.whatsapp_image);
+        ImageView gmail = findViewById(R.id.email_image);
+        CircleImageView facebook = findViewById(R.id.fb_image);
+        CircleImageView whatsApp = findViewById(R.id.whatsapp_image);
 
         whatsApp.setOnClickListener(new View.OnClickListener() {
             @Override

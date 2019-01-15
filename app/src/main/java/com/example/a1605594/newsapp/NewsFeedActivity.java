@@ -15,6 +15,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.transition.Transition;
 import android.support.transition.TransitionManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;

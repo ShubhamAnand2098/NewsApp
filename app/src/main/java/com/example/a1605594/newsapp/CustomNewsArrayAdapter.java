@@ -7,19 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
-
 import pl.droidsonroids.gif.GifImageView;
 
 public class CustomNewsArrayAdapter<E> extends ArrayAdapter<E> {
 
 
-    public CustomNewsArrayAdapter(@NonNull Context context, ArrayList<E> objects) {
+    CustomNewsArrayAdapter(@NonNull Context context, ArrayList<E> objects) {
         super(context, 0, objects);
     }
 
@@ -39,7 +35,8 @@ public class CustomNewsArrayAdapter<E> extends ArrayAdapter<E> {
 
         imageView.setBackgroundResource(R.drawable.loading_image);
 
-            Glide.with(imageView.getContext())
+        assert currentNewsFeed != null;
+        Glide.with(imageView.getContext())
                     .load(currentNewsFeed.getmPhotoUrl()).asBitmap()
                     .centerCrop()
                     .error(R.drawable.image_not_found)

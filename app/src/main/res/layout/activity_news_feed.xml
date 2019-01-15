@@ -22,7 +22,7 @@
                 android:id="@+id/collapsing_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_scrollFlags="scroll|snap"
+                app:layout_scrollFlags="scroll|enterAlways"
                 app:contentScrim="?attr/colorPrimary"
                 app:title="@string/app_name"
                 app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"

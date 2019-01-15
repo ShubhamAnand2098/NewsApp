@@ -33,7 +33,7 @@
     <string name="about_us_heading">@string/app_name</string>
     <string name="about_us_details">Version 1.0</string>
     <string name="connect">\nConnect with us</string>
-    <string name="copyright">Copyright 2018 © NewsApp</string>
+    <string name="copyright">NewsApp</string>
     <string name="newsapi"><b>Powered By:  NEWSAPI</b>\nby Shubham Anand</string>
 
 </resources>
